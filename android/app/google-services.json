@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "943770465204",
+    "project_id": "hierosecret-87b5c",
+    "storage_bucket": "hierosecret-87b5c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:943770465204:android:e66c64e66dfb589d97f8e1",
+        "android_client_info": {
+          "package_name": "com.example.gp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrsK46HeFi6cDzgGdzqKp45LL_qicuaWQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

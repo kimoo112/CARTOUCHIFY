@@ -1,0 +1,58 @@
+name: hierosecret
+description: A new Flutter project.
+version: 1.0.0+1
+environment:
+  sdk: ^3.5.2
+
+dependencies:
+  cached_network_image: ^3.4.1
+  carousel_slider: ^5.0.0
+  cloud_firestore: ^5.6.2
+  connectivity_plus: ^5.0.2
+  firebase_auth: ^5.4.1
+  firebase_core: ^3.10.1
+  firebase_storage: ^12.4.1
+  flutter:
+    sdk: flutter
+  flutter_html: null
+  flutter_map: null
+  flutter_svg: ^2.0.17
+  flutter_svg_provider: ^1.0.7
+  geolocator: ^13.0.2
+  get: ^4.6.6
+  google_maps_flutter: ^2.10.0
+  html: null
+  http: null
+  image_picker: ^1.1.2
+  intl: ^0.19.0
+  map_launcher: ^3.5.0
+  maps_launcher: ^3.0.0+1
+  shared_preferences: ^2.4.0
+  smooth_page_indicator: ^1.2.0+3
+  url_launcher: ^6.3.1
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
+    - assets/images/
+    - assets/flags/
+  fonts:
+    - family: Inika
+      fonts:
+        - asset: assets/fonts/InikaBold.ttf
+          weight: 700
+        - asset: assets/fonts/Inika.ttf
+          weight: 400
+    - family: Inter
+      fonts:
+        - asset: assets/fonts/InterBold.ttf
+          weight: 700
+        - asset: assets/fonts/InterExtraBold.ttf
+          weight: 800
+    - family: Roboto
+      fonts:
+        - asset: assets/fonts/RobotoRomanRegular.ttf
+          weight: 400
