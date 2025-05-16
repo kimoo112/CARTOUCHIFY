@@ -11,7 +11,6 @@ import 'package:hierosecret/core/app_export.dart';
 import 'package:hierosecret/widgets/app_bar/appbar_subtitle_one.dart';
 import 'package:hierosecret/widgets/app_bar/custom_app_bar.dart';
 import 'package:hierosecret/widgets/custom_bottom_app_bar.dart';
-import 'package:hierosecret/widgets/custom_floating_button.dart';
 import 'package:http/http.dart' as http;
 import 'package:image_picker/image_picker.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
@@ -171,10 +170,9 @@ class _HomePageState extends State<HomePage> {
 
             return GestureDetector(
               onTap: () {
-                Get.toNamed(AppRoutes.profileScreen, arguments: {
-                  'fullName': widget.fullName,
-                  'userID': widget.userID,
-                });
+                Get.toNamed(
+                  AppRoutes.aboutDeveloperView,
+                );
               },
               child: Container(
                 margin: EdgeInsets.fromLTRB(5.h, 22.v, 22.h, 6.v),
@@ -307,7 +305,7 @@ class _HomePageState extends State<HomePage> {
       case BottomBarEnum.Home:
         return AppRoutes.homePage;
       case BottomBarEnum.Profile:
-        return AppRoutes.profileScreen;
+        return AppRoutes.aboutDeveloperView;
       default:
         return "/";
     }
@@ -335,7 +333,7 @@ class _HomePageState extends State<HomePage> {
         Get.toNamed(AppRoutes.explorePlacesScreen);
         break;
       case 2:
-        Get.toNamed(AppRoutes.lastScannedScreen);
+        Get.toNamed(AppRoutes.explorePlacesView);
         break;
       case 3:
         Get.toNamed(AppRoutes.learnHeiroglyphsScreen);

@@ -38,7 +38,7 @@ class HomeModel {
       ),
       GridItemModel(
         nameGeneratorImage: ImageConstant.imgArafedManTaki.obs,
-        nameGeneratorText: "Last Scanned".obs,
+        nameGeneratorText: "Tourist areas".obs,
       ),
       GridItemModel(
         nameGeneratorImage: ImageConstant.imgHieroglyphsGet.obs,

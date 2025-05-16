@@ -462,7 +462,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
       case BottomBarEnum.Home:
         return AppRoutes.homePage;
       case BottomBarEnum.Profile:
-        return AppRoutes.profileScreen;
+        return AppRoutes.appNavigationScreen;
       default:
         return "/"; // Default route for debugging
     }

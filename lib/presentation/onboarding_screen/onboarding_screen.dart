@@ -83,7 +83,7 @@ class OnboardingScreen extends GetWidget<OnboardingController> {
                   ),
                   SizedBox(height: 26.v),
                   Text(
-                    "CARTOUCHIFY".tr,
+                    "Eye Of Ra".toUpperCase().tr,
                     style: theme.textTheme.displayMedium,
                   ),
                   SizedBox(height: 5.v),

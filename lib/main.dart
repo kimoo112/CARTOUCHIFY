@@ -5,16 +5,13 @@ import 'package:flutter/services.dart';
 import 'package:hierosecret/core/cache/cache_helper.dart';
 import 'package:hierosecret/firebase_options.dart';
 import 'package:hierosecret/presentation/register_screen/controller/register_controller.dart';
-
 import 'core/app_export.dart';
-
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await CacheHelper.init();
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
-
   SystemChrome.setPreferredOrientations([
     DeviceOrientation.portraitUp,
   ]).then((value) {
@@ -22,9 +19,7 @@ Future<void> main() async {
     runApp(MyApp());
   });
 }
-
 class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     Get.put(RegisterController());
@@ -32,7 +27,6 @@ class MyApp extends StatelessWidget {
       return GetMaterialApp(
         debugShowCheckedModeBanner: false,
         theme: theme,
-
         translations: AppLocalization(),
         locale: Get.deviceLocale, //for setting localization strings
         fallbackLocale: Locale('en', 'US'),

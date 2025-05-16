@@ -30,8 +30,7 @@ import 'package:hierosecret/presentation/name_generator_screen/name_generator_sc
 import 'package:hierosecret/presentation/name_generator_screen/binding/name_generator_binding.dart';
 import 'package:hierosecret/presentation/explore_places_screen/explore_places_screen.dart';
 import 'package:hierosecret/presentation/explore_places_screen/binding/explore_places_binding.dart';
-import 'package:hierosecret/presentation/last_scanned_screen/last_scanned_screen.dart';
-import 'package:hierosecret/presentation/last_scanned_screen/binding/last_scanned_binding.dart';
+
 import 'package:hierosecret/presentation/learn_heiroglyphs_screen/learn_heiroglyphs_screen.dart';
 import 'package:hierosecret/presentation/learn_heiroglyphs_screen/binding/learn_heiroglyphs_binding.dart';
 import 'package:hierosecret/presentation/name_generator_screen_result_screen/name_generator_screen_result_screen.dart';
@@ -47,6 +46,10 @@ import 'package:hierosecret/presentation/home_page/binding/home_page_binding.dar
 import 'package:hierosecret/presentation/app_navigation_screen/app_navigation_screen.dart';
 import 'package:hierosecret/presentation/app_navigation_screen/binding/app_navigation_binding.dart';
 import 'package:get/get.dart';
+
+import '../presentation/about/about_developer_view.dart';
+import '../presentation/places/explore_palces_details_view.dart';
+import '../presentation/places/explore_places_view.dart';
 
 class AppRoutes {
   static const String onboardingScreen = '/onboarding_screen';
@@ -81,13 +84,12 @@ class AppRoutes {
 
   static const String homeContainerScreen = '/home_container_screen';
 
-  static const String profileScreen = '/profile_screen';
+  // static const String profileScreen = '/profile_screen';
 
   static const String nameGeneratorScreen = '/name_generator_screen';
 
   static const String explorePlacesScreen = '/explore_places_screen';
 
-  static const String lastScannedScreen = '/last_scanned_screen';
 
   static const String learnHeiroglyphsScreen = '/learn_heiroglyphs_screen';
 
@@ -95,12 +97,15 @@ class AppRoutes {
       '/name_generator_screen_result_screen';
 
   static const String placeScreen = '/place_screen';
+  static const String placeDetailsScreen = '/placeDetailsScreen';
+  static const String aboutDeveloperView = '/aboutDeveloperView';
 
   static const String scannedScreen = '/scanned_screen';
 
   static const String homeOneScreen = '/home_one_screen';
 
   static const String appNavigationScreen = '/app_navigation_screen';
+  static const String explorePlacesView = '/explorePlacesView';
 
   static const String initialRoute = '/initialRoute';
 
@@ -204,13 +209,13 @@ class AppRoutes {
         HomePageBinding(),
       ],
     ),
-    GetPage(
-      name: profileScreen,
-      page: () => ProfileScreen(),
-      bindings: [
-        ProfileBinding(),
-      ],
-    ),
+    // GetPage(
+    //   name: profileScreen,
+    //   page: () => ProfileScreen(),
+    //   bindings: [
+    //     ProfileBinding(),
+    //   ],
+    // ),
     GetPage(
       name: nameGeneratorScreen,
       page: () => NameGeneratorScreen(),
@@ -225,13 +230,13 @@ class AppRoutes {
         ExplorePlacesBinding(),
       ],
     ),
-    GetPage(
-      name: lastScannedScreen,
-      page: () => LastScannedScreen(),
-      bindings: [
-        LastScannedBinding(),
-      ],
-    ),
+    // GetPage(
+    //   name: lastScannedScreen,
+    //   page: () => LastScannedScreen(),
+    //   bindings: [
+    //     LastScannedBinding(),
+    //   ],
+    // ),
     GetPage(
       name: learnHeiroglyphsScreen,
       page: () => LearnHeiroglyphsScreen(),
@@ -251,6 +256,12 @@ class AppRoutes {
       page: () => PlaceScreen(),
       bindings: [
         PlaceBinding(),
+      ],
+    ),
+      GetPage(
+      name:aboutDeveloperView,
+      page: () => AboutDeveloperView(),
+      bindings: [
       ],
     ),
     GetPage(
@@ -273,6 +284,16 @@ class AppRoutes {
       bindings: [
         AppNavigationBinding(),
       ],
+    ),
+     GetPage(
+      name: explorePlacesView,
+      page: () => ExplorePlacesView(),
+ 
+    ),
+     GetPage(
+      name: placeDetailsScreen,
+      page: () => PlaceDetailsScreen(),
+ 
     ),
     GetPage(
       name: initialRoute,

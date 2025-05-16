@@ -95,7 +95,7 @@ class AppNavigationScreen extends GetWidget<AppNavigationController> {
                         _buildScreenTitle(
                           screenTitle: "Profile".tr,
                           onTapScreenTitle: () =>
-                              onTapScreenTitle(AppRoutes.profileScreen),
+                              onTapScreenTitle(AppRoutes.aboutDeveloperView),
                         ),
                         _buildScreenTitle(
                           screenTitle: "Name Generator Screen".tr,
@@ -108,9 +108,9 @@ class AppNavigationScreen extends GetWidget<AppNavigationController> {
                               onTapScreenTitle(AppRoutes.explorePlacesScreen),
                         ),
                         _buildScreenTitle(
-                          screenTitle: "Last Scanned".tr,
+                          screenTitle: "Tourist areas".tr,
                           onTapScreenTitle: () =>
-                              onTapScreenTitle(AppRoutes.lastScannedScreen),
+                              onTapScreenTitle(AppRoutes.explorePlacesView),
                         ),
                         _buildScreenTitle(
                           screenTitle: "Learn Heiroglyphs".tr,
